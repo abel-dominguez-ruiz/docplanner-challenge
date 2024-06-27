@@ -1,17 +1,11 @@
 ﻿namespace VerticalSlice
 {
-    public abstract class MediatorControllerBase : ControllerBase
+    public abstract class MediatorControllerBase(
+        IMediator mediator,
+        ILogger logger) : ControllerBase
     {
-        private readonly IMediator _mediator;
-        private readonly ILogger _logger;
-
-        public MediatorControllerBase(
-            IMediator mediator,
-            ILogger logger)
-        {
-            _mediator = mediator;
-            _logger = logger;
-        }
+        private readonly IMediator _mediator = mediator;
+        private readonly ILogger _logger = logger;
 
         protected ILogger Logger => _logger;
 
@@ -42,7 +36,7 @@
                 RequestValidationException rex => BadRequest(rex.Errors),
                 BusinessValidationException bex => Conflict(bex.Message),
                 _ => StatusCode((int)HttpStatusCode.InternalServerError)
-            }); ;
+            });
         }
 
         protected virtual Task<IActionResult> HandleResponseAsync<TResponse>(TResponse response) where TResponse : class

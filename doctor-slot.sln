@@ -8,6 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0523F992-C885-4100-A11B-FD5AE9C0A4B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{83B557AF-C7BF-4B27-BC8B-8AAF6D8815B5}"
+	ProjectSection(SolutionItems) = preProject
+		docker.ps1 = docker.ps1
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\API\Api.csproj", "{7F1DB401-996F-42CD-B8E2-2DF3179B35EA}"
 EndProject
@@ -18,6 +22,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocPlanner.Client", "src\DocPlanner.Client\DocPlanner.Client.csproj", "{BA0CD9E3-4D0D-4E46-87FD-C85620CBC409}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerticalSlice", "src\VerticalSlice\VerticalSlice.csproj", "{DF5285EF-8779-4B9B-AB8A-7AF5637108BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalSlice.Test", "test\VerticalSlice.Test\VerticalSlice.Test.csproj", "{6C24174B-937B-4D49-B780-F47BB0565128}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,10 @@ Global
 		{DF5285EF-8779-4B9B-AB8A-7AF5637108BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF5285EF-8779-4B9B-AB8A-7AF5637108BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF5285EF-8779-4B9B-AB8A-7AF5637108BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C24174B-937B-4D49-B780-F47BB0565128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C24174B-937B-4D49-B780-F47BB0565128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C24174B-937B-4D49-B780-F47BB0565128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C24174B-937B-4D49-B780-F47BB0565128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +65,7 @@ Global
 		{CA612141-2B08-470A-BFEF-0592A6B760F2} = {0523F992-C885-4100-A11B-FD5AE9C0A4B4}
 		{BA0CD9E3-4D0D-4E46-87FD-C85620CBC409} = {B81CC16F-58D4-47B7-9A98-91350A697510}
 		{DF5285EF-8779-4B9B-AB8A-7AF5637108BC} = {B81CC16F-58D4-47B7-9A98-91350A697510}
+		{6C24174B-937B-4D49-B780-F47BB0565128} = {0523F992-C885-4100-A11B-FD5AE9C0A4B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5A02ACC-FAEC-4FCC-B42A-A1D297844282}

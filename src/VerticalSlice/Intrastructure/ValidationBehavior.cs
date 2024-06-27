@@ -38,9 +38,7 @@
                     ErrorMessage = failure.ErrorMessage,
                     AttemptedValue = failure.AttemptedValue
                 }));
-
             }
-
             return result;
         }
     }
