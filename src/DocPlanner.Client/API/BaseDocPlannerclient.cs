@@ -21,7 +21,7 @@
 
             if (!response.IsSuccessStatusCode)
             {
-                await HandleHttpErrors(response, $"Error trying to consume binance api with request {requestUri} at {DateTime.UtcNow} content: {jsonString}");
+                await HandleHttpErrors(response, $"Error trying to consume doc planner api with request {requestUri} at {DateTime.UtcNow} content: {jsonString}");
             }
 
             return jsonString;
