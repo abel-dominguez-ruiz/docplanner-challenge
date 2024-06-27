@@ -1,0 +1,17 @@
+﻿global using FluentValidation;
+global using System.Text.Json;
+global using DocPlanner.Client;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using VerticalSlice;
+global using VerticalSlice.Intrastructure.Exceptions;
+global using VerticalSlice.Intrastructure.Command;
+global using DocPlanner.Client.Models;
+global using doctor_slot.Services;
+global using DocPlanner.Client.API;
+global using doctor_slot.Configuration;
+global using Asp.Versioning;
+global using Asp.Versioning.ApiExplorer;
+global using Microsoft.Extensions.Options;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.SwaggerGen;

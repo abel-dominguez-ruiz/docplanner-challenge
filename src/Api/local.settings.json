@@ -1,0 +1,14 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+
+  "DocPlannerOptions:BaseUrl": "https://draliatest.azurewebsites.net",
+  "DocPlannerOptions:User": "techuser",
+  "DocPlannerOptions:Password": "secretpassWord"
+
+}

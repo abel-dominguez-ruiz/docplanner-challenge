@@ -1,0 +1,9 @@
+global using Xunit;
+global using doctor_slot.Features.GetWeeklyAvailability.V1;
+global using FluentAssertions;
+global using Newtonsoft.Json;
+global using doctor_slot.Services;
+global using Microsoft.Extensions.Logging;
+global using Moq;
+global using DocPlanner.Client.API;
+global using DocPlanner.Client.Models;
