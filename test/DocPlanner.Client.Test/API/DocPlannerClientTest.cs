@@ -69,6 +69,21 @@ namespace DocPlanner.Client.Test.API
             Assert.Equal((int)HttpStatusCode.BadRequest, exception.HttpStatusCode);
         }
 
+        [Fact]
+        public async Task SendAsync_ShouldThrowException_OnServiceUnavailable()
+        {
+            // Arrange
+            var requestUri = "/api/error";
+            var errorMessage = "Unsuccessful response with no content";
+            SetupHttpMessageHandlerMock(HttpStatusCode.ServiceUnavailable, string.Empty);
+
+            // Act & Assert
+            var exception = await Assert.ThrowsAsync<DocPlannerAPIClientException>(() => _docPlannerClient.SendAsync(requestUri, HttpMethod.Get));
+            Assert.NotEqual(errorMessage, exception.Message);
+            Assert.Equal((int)HttpStatusCode.ServiceUnavailable, exception.HttpStatusCode);
+        }
+
+
         private void SetupHttpMessageHandlerMock(HttpStatusCode statusCode, string content)
         {
             _httpMessageHandlerMock
