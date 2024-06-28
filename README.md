@@ -1,6 +1,6 @@
 # Doc Planner Challenge by Abel
 
-## Introducción
+## Introduction
 
 This repository contains the Doc Planner challenge done in C#.
 
