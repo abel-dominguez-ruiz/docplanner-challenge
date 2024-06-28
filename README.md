@@ -33,7 +33,7 @@ http://localhost:9091/swagger/index.html
 - Docker
 - PowerShell (if you are using Windows)
 
-### Pasos para Construir y Ejecutar
+### Steps Build and run
 
 1. **Clone the repository:**
 
